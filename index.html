@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="x-icon" href="/image/logo.jpg" />
+    <title>Mahi's Portfolio</title>
+    <link rel="stylesheet" href="/style.css" class="css" />
+    <script src="https://kit.fontawesome.com/916816daa7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="section-loader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="header" id="header">
+        <div class="container">
+            <nav id="navbar" class="sticky">
+                <img class="logo" src="/image/logo2.png" alt="logo" />
+                <ul id="sidemenu">
+                    <li onclick="closemenu()"><a href="#">Home</a></li>
+                    <li onclick="closemenu()"><a href="#about">About</a></li>
+                    <li onclick="closemenu()"><a href="#services">Servies</a></li>
+                    <li onclick="closemenu()"><a href="#portfolio">Portfolio</a></li>
+                    <li onclick="closemenu()"><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="row">
+                <div class="header-text" id="home">
+                    <div class="home-content">
+                        <div class="text1">Hello, My Name is</div>
+                        <div class="text2">Mahendra Parihar</div>
+                        <div class="text3">
+                            And I'am a <span id="main">Developer</span>
+                        </div>
+                        <a class="btn0 btn1" href="#contact">Hare Me</a>
+                    </div>
+                </div>
+
+                <!-- <div class="img-right">
+    
+                    <div class="img-border">
+                        <img src="image/" width="40%" height="40%" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- ========================aboute===================== -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/ab-img.png" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum doloribus delectus incidunt quos possimus, et aut
+                        recusandae laudantium explicabo deleniti quas ea expedita eius
+                        nisi quae velit accusantium natus cum.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skill')">
+                            Skill
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li>
+                                <span> HTML = 90%</span><br />
+                                CSS = 60%
+                            </li>
+                            <li>
+                                <span> JAVA SCRIPT = 40%</span><br />
+                                BOOSTRAP = 60%
+                            </li>
+                            <li>
+                                <span> REACT.JS = 10%</span><br />
+                                PHP = 10%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Web Developer</span><br />
+                                One year
+                            </li>
+                            <li><span>App Developer</span><br />No Experience</li>
+                            <li>
+                                <span>Gaming </span><br />
+                                Ten Year
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span> Bachelors's in Computer Application (B.C.A.)</span><br />Patkar varde collage -
+                                2021
+                            </li>
+
+                            <li></li>
+                            <li>
+                                <span> 2018</span><br />HSC-Science(Durgadevi Saraf Junior
+                                collage)
+                            </li>
+                            <li><span>2016</span><br />SSC(A.V.M. Academy)</li>
+                        </ul>
+                    </div>
+                </div>
+                <a target="_blank" href="#" class="btn0 btn3">Download CV <i class="fa fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== Servies ========================= -->
+
+    <div class="services" id="services">
+        <br />
+        <br />
+        <br />
+
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                        sequi veritatis, reprehenderit aut eaque rem, sapiente aspernatur
+                        amet quod similique distinctio! Soluta hic laudantium cupiditate
+                    </p>
+                    <a target="_blank" href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h2>Adobe Photoshop</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                        sequi veritatis, reprehenderit aut eaque rem, sapiente aspernatur
+                        amet quod similique distinctio! Soluta hic laudantium cupiditate
+                    </p>
+                    <a target="_blank" href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h2>Nothing</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi veritatis, reprehenderit aut
+                        eaque rem, sapiente aspernatur amet quod similique distinctio! Soluta hic laudantium cupiditate
+                    </p>
+                    <a target="_blank" href="#">learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================works=============== -->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/image/Screenshot 2022-09-08 165847.png" height="100%" alt="" />
+                    <div class="layer">
+                        <h3>Music Player..🎵</h3>
+                        <p>I made this music player using HTML, CSS and JavaScript</p>
+                        <a target="_blank" href="https://mahendrap13.github.io/Music.mahi/index.html"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/image/work2.avif" alt="" />
+                    <div class="layer">
+                        <h3>Project 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Obcaecati harum consectetur nihil
+                        </p>
+                        <a target="_blank" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/image/work3.avif" alt="" />
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Obcaecati harum consectetur nihil
+                        </p>
+                        <a target="_blank" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn0 btn2" href="#">See More</a>
+        </div>
+    </div>
+
+    <!-- =======================contact========================= -->
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" width="30px" /><a
+                            href="mailto:pariharmahendra14@gmail.com">
+                            pariharmahendra14@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <img src="https://img.icons8.com/color/48/000000/apple-phone.png" width="35px" /><a
+                            href="tel:+917738517189">+917738517189</a>
+                    </p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/home.php"><img
+                                src="https://img.icons8.com/nolan/64/facebook-new.png" width="40px" /></a>
+                        <a target="_blank" href="#"><img src="https://img.icons8.com/nolan/64/twitter.png"
+                                width="40px" /></a>
+                        <a target="_blank" href="https://www.instagram.com/mahi_13s/"><img
+                                src="https://img.icons8.com/nolan/64/instagram-new.png" width="40px" /></a>
+                        <a target="_blank" href="https://www.linkedin.com/feed/"><img
+                                src="https://img.icons8.com/nolan/64/linkedin.png" width="40px" /></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" placeholder="Yor Message" rows="6"></textarea>
+                        <button class="btn0 btn4" type="submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright ©️ Portfolio. Made With ...<i class="fa-solid heart fa-heart"></i>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/anima.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
